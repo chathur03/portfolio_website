@@ -37,6 +37,53 @@ const Section = ({ id, title, children }) => (
   </section>
 );
 
+const projects = [
+  {
+    title: "MedScanAI",
+    description: "Developed a web application for medical scan analysis using AI and ML models to detect various health conditions.",
+    technologies: "HTML, CSS, JavaScript, Python, TensorFlow, Django"
+  },
+  {
+    title: "FilePrintHub",
+    description: "Developed a web application for managing orders and user authentication using the Python Flask framework.",
+    technologies: "HTML, CSS, JavaScript, Python-Flask, SQL"
+  },
+  {
+    title: "StudyBud",
+    description: "Created a Django project allowing users to create virtual rooms based on their topics of interest.",
+    technologies: "Django, REST API"
+  },
+  {
+    title: "Data Analysis for Car Sales in R Language",
+    description: "Created a dashboard that empowers users to select specific years and companies, facilitating dynamic data filtering.",
+    technologies: "R Shiny, Plotly, ggplot2"
+  },
+  {
+    title: "System Resource Monitoring",
+    description: "Developed a Python tool that monitors system resources and suggests applications to close for resource optimization.",
+    technologies: "Python-Psutil"
+  },
+  {
+    title: "Weather Data Emailer",
+    description: "Created a Python script utilizing OpenWeatherMap and Mailjet APIs to automate weather data retrieval and email reporting.",
+    technologies: "API Integration-Mailjet, OpenWeatherApp"
+  }
+];
+
+const Projects = () => (
+  <Section id="projects" title="Projects">
+    <div className="projects-container">
+      {projects.map((project, index) => (
+        <div className="project" key={index}>
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
+          <p><strong>Technologies used:</strong> {project.technologies}</p>
+        </div>
+      ))}
+    </div>
+  </Section>
+);
+
 const App = () => (
   <div>
     <header>
@@ -65,7 +112,7 @@ const App = () => (
           <p>87%</p>
         </li>
         <li>
-          <h3>Clarence Public School</h3>
+          <h3>Clarence Public School</h>
           <p>Indian Certificate of Secondary Education - April 2019</p>
           <p>88%</p>
         </li>
@@ -80,38 +127,7 @@ const App = () => (
       </ul>
     </Section>
 
-    <Section id="projects" title="Projects">
-      <div className="project">
-        <h3>MedScanAI</h3>
-        <p>Developed a web application for medical scan analysis using AI and ML models to detect various health conditions.</p>
-        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python, TensorFlow, Django</p>
-      </div>
-      <div className="project">
-        <h3>FilePrintHub</h3>
-        <p>Developed a web application for managing orders and user authentication using the Python Flask framework.</p>
-        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python-Flask, SQL</p>
-      </div>
-      <div className="project">
-        <h3>StudyBud</h3>
-        <p>Created a Django project allowing users to create virtual rooms based on their topics of interest.</p>
-        <p><strong>Technologies used:</strong> Django, REST API</p>
-      </div>
-      <div className="project">
-        <h3>Data Analysis for Car Sales in R Language</h3>
-        <p>Created a dashboard that empowers users to select specific years and companies, facilitating dynamic data filtering.</p>
-        <p><strong>Technologies used:</strong> R Shiny, Plotly, ggplot2</p>
-      </div>
-      <div className="project">
-        <h3>System Resource Monitoring</h3>
-        <p>Developed a Python tool that monitors system resources and suggests applications to close for resource optimization.</p>
-        <p><strong>Technologies used:</strong> Python-Psutil</p>
-      </div>
-      <div className="project">
-        <h3>Weather Data Emailer</h3>
-        <p>Created a Python script utilizing OpenWeatherMap and Mailjet APIs to automate weather data retrieval and email reporting.</p>
-        <p><strong>Technologies used:</strong> API Integration-Mailjet, OpenWeatherApp</p>
-      </div>
-    </Section>
+    <Projects />
 
     <Section id="contact" title="Contact">
       <p>Email: <a href="mailto:brchathur2003@gmail.com">brchathur2003@gmail.com</a></p>
