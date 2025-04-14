@@ -339,3 +339,39 @@ footer {
         transform: translateY(0);
     }
 }
+/* Additional Polishes */
+.project {
+  flex: 1 1 calc(33.333% - 20px);
+  background: linear-gradient(145deg, #252525, #1a1a1a);
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(255, 215, 0, 0.2);
+}
+
+.project p {
+  color: #ccc;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.section h3 {
+  font-size: 1.3em;
+  color: #f0c420;
+}
+
+.section p, li {
+  font-size: 1em;
+  line-height: 1.6;
+}
