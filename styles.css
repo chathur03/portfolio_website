@@ -1,84 +1,104 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
+/* Reset & Base */
+* {
     margin: 0;
     padding: 0;
-    background: #121212;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0d0d0d;
     color: #e0e0e0;
+    line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1f1f1f, #1a1a1a);
+    background: linear-gradient(135deg, #1a1a1a, #111);
     color: #ffd700;
-    padding: 20px 0;
+    padding: 25px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    flex-wrap: wrap;
 }
 
 header h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.8em;
+    font-size: 3em;
     letter-spacing: 1px;
     color: #ffd700;
+    text-shadow: 0 0 8px rgba(255,215,0,0.8);
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
 header nav ul li a {
     color: #ffd700;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s, transform 0.3s;
+    transition: 0.3s;
 }
 
 header nav ul li a:hover {
     color: #fff;
+    text-shadow: 0 0 8px #ffd700;
     transform: scale(1.1);
 }
 
 /* Sections */
 .section {
-    padding: 80px 20px;
-    margin: 20px auto;
+    padding: 100px 20px;
+    margin: 40px auto;
     max-width: 1200px;
-    background: linear-gradient(145deg, #1b1b1b, #242424);
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-    animation: fadeInUp 1s ease;
+    background: linear-gradient(145deg, #1b1b1b, #111);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(255,215,0,0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,215,0,0.05) 0%, transparent 70%);
+    pointer-events: none;
+    transform: rotate(45deg);
 }
 
 .section h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.4em;
-    margin-bottom: 25px;
+    font-size: 2.8em;
+    margin-bottom: 30px;
     color: #ffd700;
-    border-bottom: 2px solid #ffd700;
+    border-bottom: 3px solid #ffd700;
     display: inline-block;
     padding-bottom: 5px;
 }
 
 .section h3 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #f0c420;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .section p, .section li {
@@ -87,33 +107,34 @@ header nav ul li a:hover {
     color: #ccc;
 }
 
-/* Lists */
 ul {
     padding-left: 25px;
 }
+
 ul li {
     margin-bottom: 15px;
 }
 
 /* Projects */
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
 }
 
 .project {
-    flex: 1 1 calc(33% - 20px);
-    background: linear-gradient(135deg, #1f1f1f, #181818);
-    border: 1px solid #333;
+    background: linear-gradient(145deg, #1c1c1c, #121212);
+    border-left: 3px solid #ffd700;
     padding: 25px;
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 35px rgba(255,215,0,0.25);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255,215,0,0.25);
 }
 
 .project p {
@@ -128,19 +149,20 @@ ul li {
 .section a {
     color: #ffd700;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 .section a:hover {
     color: #fff;
+    text-shadow: 0 0 6px #ffd700;
 }
 
 /* Footer */
 footer {
-    background: #111;
+    background: #0a0a0a;
     color: #aaa;
     text-align: center;
-    padding: 25px 0;
+    padding: 30px 0;
     border-top: 1px solid #333;
 }
 
@@ -152,7 +174,6 @@ footer {
 
 /* Responsive */
 @media (max-width: 992px) {
-    .projects-container { flex-direction: column; }
-    .project { flex: 1 1 100%; }
-    header .container { flex-direction: column; gap: 15px; }
+    .projects-container { grid-template-columns: 1fr; }
+    header .container { flex-direction: column; gap: 20px; }
 }
