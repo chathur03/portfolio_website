@@ -1,192 +1,22 @@
-/* 
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #eee;
-    background-color: #1a1a1a;
-}
-
-
-header {
-    background: linear-gradient(45deg, #1e3c72, #2a5298);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-family: 'Montserrat', sans-serif;
-    animation: fadeIn 2s;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s, transform 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #ffd700;
-    transform: scale(1.1);
-}
-
-
-.marquee {
-    background-color: #2a5298;
-    color: white;
-    padding: 10px 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1em;
-}
-
-
-.section {
-    padding: 60px 20px;
-    background-color: #2b2b2b;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    animation: fadeInUp 1s;
-}
-
-.section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffd700;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.section ul li {
-    margin-bottom: 20px;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-.project p {
-    margin: 5px 0;
-}
-
-
-.skills {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.skill-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.skill-icons img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease;
-}
-
-.skill-icons img:hover {
-    transform: scale(1.2);
-}
-
-
-footer {
-    background: linear-gradient(45deg, #1e3c72, #2a5298);
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: sticky;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
- */
-
-
-/* General styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #eee;
-    background-color: #1a1a1a;
+    background: #121212;
+    color: #e0e0e0;
     overflow-x: hidden;
 }
 
 /* Header */
 header {
-    background: linear-gradient(45deg, #1e3c72, #2a5298);
-    color: white;
+    background: linear-gradient(135deg, #1f1f1f, #1a1a1a);
+    color: #ffd700;
     padding: 20px 0;
-    text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    animation: slideInDown 1s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 header .container {
@@ -194,69 +24,75 @@ header .container {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-family: 'Montserrat', sans-serif;
-    animation: fadeIn 2s;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s, transform 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #ffd700;
-    transform: scale(1.1);
-}
-
-/* Section */
-.section {
-    padding: 60px 20px;
-    background-color: #2b2b2b;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    animation: fadeInUp 1s;
-}
-
-.section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffd700;
-}
-
-.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.section ul {
-    list-style: none;
-    padding: 0;
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    color: #ffd700;
 }
 
-.section ul li {
-    margin-bottom: 20px;
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: linear-gradient(145deg, #1b1b1b, #242424);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease;
+}
+
+.section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4em;
+    margin-bottom: 25px;
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section h3 {
+    font-size: 1.5em;
+    color: #f0c420;
+    margin-bottom: 10px;
+}
+
+.section p, .section li {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+/* Lists */
+ul {
+    padding-left: 25px;
+}
+ul li {
+    margin-bottom: 15px;
 }
 
 /* Projects */
@@ -267,26 +103,25 @@ header nav ul li a:hover {
 }
 
 .project {
-    flex: 1 1 calc(33.333% - 20px);
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(33% - 20px);
+    background: linear-gradient(135deg, #1f1f1f, #181818);
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.project h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #ffd700;
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(255,215,0,0.25);
 }
 
 .project p {
-    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.project strong {
+    color: #ffd700;
 }
 
 /* Contact */
@@ -302,76 +137,22 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #1a1a1a;
-    color: #999;
+    background: #111;
+    color: #aaa;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-    border-top: 1px solid #444;
+    padding: 25px 0;
+    border-top: 1px solid #333;
 }
 
 /* Animations */
-@keyframes slideInDown {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* Additional Polishes */
-.project {
-  flex: 1 1 calc(33.333% - 20px);
-  background: linear-gradient(145deg, #252525, #1a1a1a);
-  border: 1px solid #333;
-  padding: 20px;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.project:hover {
-  transform: scale(1.03);
-  box-shadow: 0 12px 24px rgba(255, 215, 0, 0.2);
-}
-
-.project p {
-  color: #ccc;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-.section h3 {
-  font-size: 1.3em;
-  color: #f0c420;
-}
-
-.section p, li {
-  font-size: 1em;
-  line-height: 1.6;
+/* Responsive */
+@media (max-width: 992px) {
+    .projects-container { flex-direction: column; }
+    .project { flex: 1 1 100%; }
+    header .container { flex-direction: column; gap: 15px; }
 }
