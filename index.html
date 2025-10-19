@@ -1,141 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chathur BR - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chathur BR - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Chathur BR</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Chathur BR</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>As a Computer Science and Engineering graduate, I specialize in software engineering, artificial intelligence, and web technologies. I aim to develop robust, scalable, and intelligent systems that support enterprise transformation and deliver measurable business value.</p>
-        </div>
-    </section>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>As a Computer Science and Engineering graduate, I specialize in software engineering, artificial intelligence, and web technologies. I aim to develop robust, scalable, and intelligent systems that support enterprise transformation and deliver measurable business value.</p>
+    </div>
+  </section>
 
-    <section id="education" class="section">
-        <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>Dayananda Sagar Academy of Technology and Management</h3>
-                    <p>Bachelor of Science in Computer Science and Engineering (2021 – 2025)</p>
-                    <p>CGPA: 8.57</p>
-                </li>
-                <li>
-                    <h3>Base PU College</h3>
-                    <p>Department of Pre-University Education (Govt of Karnataka) - April 2021</p>
-                    <p>87%</p>
-                </li>
-                <li>
-                    <h3>Clarence Public School</h3>
-                    <p>Indian Certificate of Secondary Education - April 2019</p>
-                    <p>88%</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+  <section id="education" class="section">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="education-grid">
 
-    <section id="experience" class="section">
-        <div class="container">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <h3>Associate Consultant</h3>
-                    <p><strong>Oracle Financial Services Software Limited</strong> | July 2025 — Present</p>
-                    <p>Working on PL/SQL, Spring Boot Microservices, Java, Flexcube, ODT, OBX, and Oracle 19c Database. Engaged in developing robust enterprise applications, optimizing database performance, and contributing to scalable financial software solutions.</p>
-                </li>
-            </ul>
+      <div class="edu-card">
+        <div class="edu-header">
+          <h3>Dayananda Sagar Academy of Technology and Management</h3>
+          <img src="https://dsca.edu.in/wp-content/uploads/2025/01/DS-logo-01-01.png" alt="DSATM Logo" class="edu-logo" />
         </div>
-    </section>
+        <p class="edu-degree">Bachelor of Engineering in Computer Science and Engineering (2021 – 2025)</p>
+        <p class="edu-score">CGPA: 8.57</p>
+      </div>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills & Abilities</h2>
-            <ul>
-                <li>Languages: Python, Java, C, C++, HTML, CSS, JavaScript, SQL</li>
-                <li>Developer Tools: Git and GitHub, VS Code, Eclipse, NetBeans, Google Colab, PyCharm, ChatGPT, Perplexity AI</li>
-                <li>Coursework: Data Structures and Algorithms, Database Management, Artificial Intelligence, Machine Learning</li>
-            </ul>
+      <div class="edu-card">
+        <div class="edu-header">
+          <h3>Base PU College</h3>
+          <img src="https://images.uniapply.com/uploads/college/image/logo/3613/Base_PU_College_6509_Logo_UA_1.png" alt="BASE logo" class="edu-logo" />
         </div>
-    </section>
+        <p class="edu-degree">Department of Pre-University Education (Govt of Karnataka) - April 2021</p>
+        <p class="edu-score">Percentage : 87%</p>
+      </div>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-container">
-                <div class="project">
-                    <h3>PayEasy</h3>
-                    <p>PayEasy is a full-stack digital payments and e-commerce platform similar to Paytm, supporting OTP authentication, wallet funding, bill payments, product checkout, and transaction history. Merchants can manage catalogs, bank accounts, and track sales through a dashboard. The system uses Kafka for OTP, API Gateway with Eureka for service discovery, and Oracle DB (JPA/Hibernate) for data integrity.</p>
-                    <p><strong>Technologies used:</strong> Spring Boot, AngularJS, Oracle SQL, JPA/Hibernate, Kafka, Eureka</p>
-                </div>
-                <div class="project">
-                    <h3>MedScanAI</h3>
-                    <p>Developed a web application for medical scan analysis using AI and ML models to detect various health conditions.</p>
-                    <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python, TensorFlow, Django</p>
-                </div>
-                <div class="project">
-                    <h3>FilePrintHub</h3>
-                    <p>Developed a web application for managing orders and user authentication using the Python Flask framework.</p>
-                    <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python-Flask, SQL</p>
-                </div>
-                <div class="project">
-                    <h3>StudyBud</h3>
-                    <p>Created a Django project allowing users to create virtual rooms based on their topics of interest.</p>
-                    <p><strong>Technologies used:</strong> Django, REST API</p>
-                </div>
-                <div class="project">
-                    <h3>Data Analysis for Car Sales in R Language</h3>
-                    <p>Created a dashboard that empowers users to select specific years and companies, facilitating dynamic data filtering.</p>
-                    <p><strong>Technologies used:</strong> R Shiny, Plotly, ggplot2</p>
-                </div>
-                <div class="project">
-                    <h3>System Resource Monitoring</h3>
-                    <p>Developed a Python tool that monitors system resources and suggests applications to close for resource optimization.</p>
-                    <p><strong>Technologies used:</strong> Python-Psutil</p>
-                </div>
-                <div class="project">
-                    <h3>Weather Data Emailer</h3>
-                    <p>Created a Python script utilizing OpenWeatherMap and Mailjet APIs to automate weather data retrieval and email reporting.</p>
-                    <p><strong>Technologies used:</strong> API Integration-Mailjet, OpenWeatherApp</p>
-                </div>
-            </div>
+      <div class="edu-card">
+        <div class="edu-header">
+          <h3>Clarence Public School</h3>
+          <img src="https://bangaloreschooldirectory.com/assets/upload/profileimg/PRFIMGUSR85661667799805.png" alt="CPS logo" class="edu-logo" />
         </div>
-    </section>
+        <p class="edu-degree">Indian Certificate of Secondary Education (ICSE) - April 2019</p>
+        <p class="edu-score">Percentage : 88%</p>
+      </div>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:brchathur2003@gmail.com">brchathur2003@gmail.com</a></p>
-            <p>Phone: 9742226527</p>
-            <p><a href="https://www.linkedin.com/in/chathurbr">LinkedIn</a> | <a href="https://github.com/chathur03">GitHub</a></p>
-        </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Chathur BR. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>
+            Associate Consultant — Oracle Financial Services Software Limited
+            <img src="https://logos-world.net/wp-content/uploads/2020/09/Oracle-Logo.png" alt="Oracle Logo" class="inline-logo" />
+          </h3>
+          <p><strong>July 2025 — Present</strong></p>
+          <p>Working on PL/SQL, Spring Boot Microservices, Java, Flexcube, ODT, OBX, and Oracle 19c Database. Engaged in developing robust enterprise applications, optimizing database performance, and contributing to scalable financial software solutions.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Skills & Tech Stack</h2>
+
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="https://www.citypng.com/public/uploads/preview/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn.png" alt="Python">
+        <p>Python</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://icon2.cleanpng.com/20180810/cxt/d23780775d7cda9c59c48939dd5ac4bd.webp" alt="Java">
+        <p>Java</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/?size=1200&id=J6KcaRLsTgpZ&format=png" alt="SQL">
+        <p>SQL</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://e4developer.com/wp-content/uploads/2018/01/spring-boot.png" alt="Spring Boot">
+        <p>Spring Boot</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://1000logos.net/wp-content/uploads/2020/08/Django-Logo.png" alt="Django">
+        <p>Django</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://www.vhv.rs/dpng/d/35-351319_flask-logo-png-transparent-png.png" alt="Flask">
+        <p>Flask</p>
+      </div>
+    </div>
+
+    <!-- New section for detailed skill list -->
+    <div class="skills-details">
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, C, C++, HTML, CSS, JavaScript, SQL</li>
+        <li><strong>Developer Tools:</strong> Git and GitHub, VS Code, Eclipse, NetBeans, Google Colab, PyCharm, ChatGPT, Perplexity AI</li>
+        <li><strong>Coursework:</strong> Data Structures and Algorithms, Database Management, Artificial Intelligence, Machine Learning</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+ <section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-container">
+
+      <div class="project">
+        <h3>PayEasy</h3>
+        <p>Developed a digital payments and e-commerce platform with OTP-based login, wallet funding, bill payments, product checkout, and merchant dashboards.</p><br>
+        <p><strong>Technologies used:</strong> Spring Boot, AngularJS, Oracle SQL, Kafka, Eureka</p>
+
+        <a href="#" class="github-btn" target="_blank">
+          <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="GitHub" />
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>MedScanAI</h3>
+        <p>Built an AI web app for analyzing medical scans to detect health conditions using TensorFlow models integrated with a Django backend.</p><br>
+        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python, TensorFlow, Django</p>
+
+        <a href="#" class="github-btn" target="_blank">
+          <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="GitHub" />
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>FilePrintHub</h3>
+        <p>Created an online document printing system with secure authentication, file uploads, and order tracking for users and admins.</p><br>
+        <p><strong>Technologies used:</strong> Flask, SQL, HTML, CSS, JavaScript</p>
+
+        <a href="#" class="github-btn" target="_blank">
+          <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="GitHub" />
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>StudyBud</h3>
+        <p>Developed a Django app where users create topic-based discussion rooms with authentication and REST API integration.</p><br>
+        <p><strong>Technologies used:</strong> Django, REST API</p>
+
+        <a href="#" class="github-btn" target="_blank">
+          <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="GitHub" />
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>System Resource Monitoring</h3>
+        <p>Built a Python tool that tracks CPU, memory, and disk usage, suggesting unnecessary apps to close for better performance.</p><br>
+        <p><strong>Technologies used:</strong> Python, Psutil</p>
+
+        <a href="#" class="github-btn" target="_blank">
+          <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="GitHub" />
+          View on GitHub
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:brchathur2003@gmail.com">brchathur2003@gmail.com</a></p>
+      <p>Phone: 9742226527</p>
+      <p><a href="https://www.linkedin.com/in/chathurbr" target="_blank">LinkedIn</a> | <a href="https://github.com/chathur03" target="_blank">GitHub</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Chathur BR. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
-
