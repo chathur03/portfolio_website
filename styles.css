@@ -670,25 +670,37 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 76px;
-  min-height: 76px;
-  padding: 12px;
-  border-radius: 22px;
+  min-width: 58px;
+  min-height: 58px;
+  padding: 8px;
+  border-radius: 18px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 237, 226, 0.92));
   border: 1px solid rgba(31, 53, 82, 0.1);
-  box-shadow: 0 16px 30px rgba(22, 33, 47, 0.08);
+  box-shadow: 0 10px 20px rgba(22, 33, 47, 0.07);
+  flex-shrink: 0;
 }
 
 .institution-logo {
-  width: 62px;
-  height: 62px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
   display: block;
 }
 
 .institution-logo-wide {
-  width: 104px;
-  height: 50px;
+  width: 92px;
+  height: 28px;
+}
+
+.education-card .logo-badge {
+  min-width: 68px;
+  min-height: 68px;
+  padding: 10px;
+}
+
+.education-card .institution-logo {
+  width: 48px;
+  height: 48px;
 }
 
 .contact-section {
